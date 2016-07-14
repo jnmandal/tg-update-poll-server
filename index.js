@@ -12,6 +12,6 @@ switch (process.argv[2]) {
     app.deactivateWebhook().then(res => console.log(res));
     break;
   default:
-    console.log("Please specify an option. \nOptions are: \nhook-on \nhook-off \npoll.");
+    console.log('Please specify an option. \nOptions are: \nhook-on \nhook-off \npoll');
     break;
 }
