@@ -52,8 +52,9 @@ function forward(update) {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(update)
-  }).then(res => res.json())
-    .then(json => console.log(json));
+  }).then(res => {res.json()})
+    .then(json => console.log(json))
+    .catch(error => console.log(error));
 }
 
 module.exports = {
