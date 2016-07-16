@@ -45,7 +45,7 @@ function poll() {
  * forwards update to endpoint set in config.js
  */
 function forward(update) {
-  console.log(update)
+  console.log(JSON.stringify(update))
   return fetch(endpoint, {
     method: 'post',
     headers: {
